@@ -75,5 +75,8 @@
             "allow-contrib": false,
             "require": "6.1.*"
         }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "6.1.*"
     }
 }

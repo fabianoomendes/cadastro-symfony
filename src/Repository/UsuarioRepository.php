@@ -39,6 +39,13 @@ class UsuarioRepository extends ServiceEntityRepository
         }
     }
 
+    public function pegarTodos()
+    {
+        return $this->createQueryBuilder('u')
+            ->getQuery()
+            ->getArrayResult();
+    }
+
 //    /**
 //     * @return Usuario[] Returns an array of Usuario objects
 //     */
